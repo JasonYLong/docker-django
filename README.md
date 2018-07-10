@@ -19,4 +19,5 @@
 
     ./stop.sh
 
-
+此项目照搬： https://www.jianshu.com/p/4e4c85e1e2b8
+只是对web中的Dockerfile 进行了修改。
