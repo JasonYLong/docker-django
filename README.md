@@ -21,3 +21,5 @@
 
 此项目照搬： https://www.jianshu.com/p/4e4c85e1e2b8
 只是对web中的Dockerfile 进行了修改。
+
+通过访问link http://IP:8888/  测试是否发布成功。
