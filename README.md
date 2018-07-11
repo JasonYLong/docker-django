@@ -23,3 +23,11 @@
 只是对web中的Dockerfile 进行了修改。
 
 通过访问link http://IP:8888/  测试是否发布成功。
+
+**mysql导入数据**:
+
+   #docker inspect --format "{{.State.Pid}}" mysql
+   23962
+   #nsenter --target 23962 --mount --uts --ipc --net --pid
+   root@efdca36076cb:/etc/mysql/conf.d# cd /etc/mysql/conf.d/
+   root@efdca36076cb:/etc/mysql/conf.d# mysql -uroot -p123456 -D blog < blog.sql 
